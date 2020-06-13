@@ -19,9 +19,9 @@ MonoBehaviour:
       m_GuidLow: 5475341376486491198
       m_GuidHigh: 18384068145294573443
     m_SerializedTextureGuid:
-      m_GuidLow: 3455633955584661859
-      m_GuidHigh: 1464034531206661898
-    m_Size: {x: 0.165, y: 0.25769496}
+      m_GuidLow: 15835899642767062127
+      m_GuidHigh: 8332223007455474907
+    m_Size: {x: 0.165, y: 0.2503348}
     m_SpecifySize: 1
     m_Name: Issue 19
     m_Texture: {fileID: 0}
@@ -29,9 +29,9 @@ MonoBehaviour:
       m_GuidLow: 5145152977028755117
       m_GuidHigh: 2492641017476910735
     m_SerializedTextureGuid:
-      m_GuidLow: 15570141064726125903
-      m_GuidHigh: 1358860821220091049
-    m_Size: {x: 0.165, y: 0.25429592}
+      m_GuidLow: 13552619246790073606
+      m_GuidHigh: 2934466161949283560
+    m_Size: {x: 0.165, y: 0.2504193}
     m_SpecifySize: 1
     m_Name: Issue 25
     m_Texture: {fileID: 0}
@@ -39,9 +39,9 @@ MonoBehaviour:
       m_GuidLow: 5526981571078333700
       m_GuidHigh: 13823740595084914848
     m_SerializedTextureGuid:
-      m_GuidLow: 12746494597019521089
-      m_GuidHigh: 7274695104607604601
-    m_Size: {x: 0.165, y: 0.2568235}
+      m_GuidLow: 1563987688286593930
+      m_GuidHigh: 14732129310939280696
+    m_Size: {x: 0.165, y: 0.2503279}
     m_SpecifySize: 1
     m_Name: Issue 27
     m_Texture: {fileID: 0}
