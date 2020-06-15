@@ -16,7 +16,7 @@ public class DuckPlacer : MonoBehaviour {
     }
 
     void Update() {
-        if(Input.touchCount > 0) {
+        if(Input.touchCount == 1) {
             if(!touching) {
                 touching = true;
                 currentDuck = Instantiate(duck).transform;

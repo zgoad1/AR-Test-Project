@@ -26,6 +26,9 @@ public class ResetAllTrackables : MonoBehaviour {
                 foreach(ARSession s in FindObjectsOfType<ARSession>()) {
                     s.Reset();
                 }
+                foreach(DuckController d in FindObjectsOfType<DuckController>()) {
+                    Destroy(d.gameObject);
+                }
                 StartCoroutine(EnableDisableManagers(true, 0.1f));
             }
         }
@@ -46,6 +49,14 @@ public class ResetAllTrackables : MonoBehaviour {
             if(!toEnable) {
                 foreach(ARTrackedImage t in m.trackables) {
                     m.gameObject.SetActive(false);
+                }
+            }
+        }
+        foreach(ARAnchorManager m in FindObjectsOfType<ARAnchorManager>()) {
+            m.enabled = toEnable;
+            if(!toEnable) {
+                foreach(ARAnchor t in m.trackables) {
+                    m.RemoveAnchor(t);
                 }
             }
         }
