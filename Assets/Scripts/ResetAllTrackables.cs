@@ -40,7 +40,7 @@ public class ResetAllTrackables : MonoBehaviour {
             m.enabled = toEnable;
             if(!toEnable) {
                 foreach(ARPlane t in m.trackables) {
-                    m.gameObject.SetActive(false);
+                    t.gameObject.SetActive(false);
                 }
             }
         }
@@ -57,6 +57,14 @@ public class ResetAllTrackables : MonoBehaviour {
             if(!toEnable) {
                 foreach(ARAnchor t in m.trackables) {
                     m.RemoveAnchor(t);
+                }
+            }
+        }
+        foreach(ARPointCloudManager m in FindObjectsOfType<ARPointCloudManager>()) {
+            m.enabled = toEnable;
+            if(!toEnable) {
+                foreach(ARPointCloud t in m.trackables) {
+                    t.gameObject.SetActive(false);
                 }
             }
         }

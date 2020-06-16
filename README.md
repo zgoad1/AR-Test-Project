@@ -19,3 +19,8 @@ Without anchors, planes and tracked images will snap back to their original posi
 [Anchors](https://youtu.be/2Nbsy4XRNiU)
 
 When the same objects have AR Anchor components, they consistently snap back into place after being confused.
+
+# Point Clouds
+![alt text](https://github.com/zgoad1/AR-Test-Project/blob/master/Assets/Images/GIFs/Point_Cloud.gif)
+
+Using the AR Point Cloud Manager to detect feature points and generate geometry to represent the area. Also supports raycasting, similarly to the AR Plane Manager.
