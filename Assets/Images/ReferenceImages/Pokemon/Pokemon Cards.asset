@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: Pokemon Cards
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5560919090595961774
+  m_GuidHigh: 961071394695457181
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4980600803258685965
+      m_GuidHigh: 4068888408981340033
+    m_SerializedTextureGuid:
+      m_GuidLow: 13475925495459101911
+      m_GuidHigh: 5560759177560704440
+    m_Size: {x: 0.063040935, y: 0.088}
+    m_SpecifySize: 1
+    m_Name: absol
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4794983391301404425
+      m_GuidHigh: 4838357123829981836
+    m_SerializedTextureGuid:
+      m_GuidLow: 7279041901197161224
+      m_GuidHigh: 10081863468088981019
+    m_Size: {x: 0.063040935, y: 0.088}
+    m_SpecifySize: 1
+    m_Name: scyther
+    m_Texture: {fileID: 0}

@@ -6,11 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/AR Test.unity
+    path: Assets/Scenes/Init.unity
+    guid: d6f8d0bbbc4ec3a46a406043759b0473
+  - enabled: 1
+    path: Assets/Scenes/Title Screen.unity
     guid: 64b108765f91ddc41b4db6601de846ef
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Scenes/Plane Tracking Test.unity
+    guid: b977510759aa3df499aba687f5521528
+  - enabled: 1
+    path: Assets/Scenes/Image Tracking Test.unity
+    guid: ad7361fae8f1bbd488cf71d642c97190
+  - enabled: 1
+    path: Assets/Scenes/Anchor Test.unity
+    guid: 68ab2d623feaf55419e730597d766792
+  - enabled: 1
+    path: Assets/Scenes/Point Cloud Test.unity
+    guid: fe40b4818307b75479b792efe48b717b
   m_configObjects:
     com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: e1f2d9401996a454b914ad4b04fb2855,
       type: 2}

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using TMPro;
 
-public class ImageIdentifier : MonoBehaviour {
+public class CardIdentifier : MonoBehaviour {
 
     public ARTrackedImageManager manager;
 
@@ -18,7 +18,7 @@ public class ImageIdentifier : MonoBehaviour {
 
     void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs) {
         foreach(ARTrackedImage image in eventArgs.added) {
-            image.GetComponentInChildren<TextMeshPro>().text = image.referenceImage.name;
+            image.GetComponentInChildren<PokemonSpawner>().Spawn(image.name);
         }
     }
 
