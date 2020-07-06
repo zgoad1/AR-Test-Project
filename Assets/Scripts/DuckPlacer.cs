@@ -26,6 +26,9 @@ public class DuckPlacer : MonoBehaviour {
             }
             List<ARRaycastHit> hits = new List<ARRaycastHit>();
             if(raycaster.Raycast(Input.GetTouch(0).position, hits)) {
+                Vector3 newForward = hits[0].pose.position - currentDuck.position;
+                newForward.y = 0;
+                currentDuck.forward = Vector3.Slerp(currentDuck.forward, newForward, newForward.sqrMagnitude * 300);
                 currentDuck.position = hits[0].pose.position;
             }
         } else {

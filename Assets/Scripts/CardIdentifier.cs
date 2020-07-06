@@ -18,8 +18,14 @@ public class CardIdentifier : MonoBehaviour {
 
     void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs) {
         foreach(ARTrackedImage image in eventArgs.added) {
-            image.GetComponentInChildren<PokemonSpawner>().Spawn(image.name);
+            Debug.Log("Found an image! " + image.referenceImage.name);
+            if(PokemonSpawner.ActiveCard == null) {
+                image.GetComponentInChildren<PokemonSpawner>().Activate(image.referenceImage.name);
+            }
         }
+        //foreach(ARTrackedImage image in manager.trackables) {
+        //    Debug.Log("Image at " + image.transform.position);
+        //}
     }
 
 }
