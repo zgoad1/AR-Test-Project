@@ -18,7 +18,15 @@ public class ImageIdentifier : MonoBehaviour {
 
     void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs) {
         foreach(ARTrackedImage image in eventArgs.added) {
-            image.GetComponentInChildren<TextMeshPro>().text = image.referenceImage.name;
+            //image.GetComponentInChildren<TextMeshPro>().text = image.referenceImage.name;
+            try {
+                //image.GetComponentInChildren<AddressableLoader>().LoadAsset(image.referenceImage.name, image.transform.position);
+                GameObject obj = Resources.Load<GameObject>(image.referenceImage.name);
+                obj.transform.position = image.transform.position;
+                Debug.Log("SUCCESSFULLY SPAWNED A " + obj.name);
+            } catch {
+                Debug.LogError("ERROR - image is null, probably!");
+            }
         }
     }
 

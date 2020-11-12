@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.AddressableAssets;
 
 public class ReferencePointAdder : MonoBehaviour {
 
     public ARAnchorManager manager;
     public ARRaycastManager raycaster;
+    public GameObject addressableLoaderPrefab;
 
     private bool trackingTouch;
 
@@ -38,8 +40,14 @@ public class ReferencePointAdder : MonoBehaviour {
             Quaternion newRotation = Quaternion.Euler(newEulers);
             Pose newPose = new Pose(hits[0].pose.position, newRotation);
             ARAnchor anchor = manager.AddAnchor(hits[0].pose);
-            Transform duck = anchor.GetComponentInChildren<DuckController>().transform;
-            duck.rotation = newRotation;
+
+
+            //Transform duck = anchor.GetComponentInChildren<DuckController>().transform;
+            AddressableLoader loader = Instantiate(addressableLoaderPrefab).GetComponent<AddressableLoader>();
+            loader.LoadAsset("test_absol_1", newPose.position, newPose.rotation);
+
+            
+            //duck.rotation = newRotation;
         }
     }
 }
