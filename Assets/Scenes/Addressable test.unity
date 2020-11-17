@@ -809,6 +809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 482916525}
+  cam: {fileID: 1512058090}
 --- !u!114 &482916527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1565,6 +1566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 1177939555}
   raycaster: {fileID: 1177939553}
+  addressableLoaderPrefab: {fileID: 0}
 --- !u!114 &1177939553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1813,6 +1815,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad0d67002fc7854086af24dbaa2480f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+  _label: remote
 --- !u!1 &1512058083
 GameObject:
   m_ObjectHideFlags: 0

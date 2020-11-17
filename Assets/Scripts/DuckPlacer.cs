@@ -19,7 +19,8 @@ public class DuckPlacer : MonoBehaviour {
         if(Input.touchCount == 1) {
             if(!touching) {
                 touching = true;
-                currentDuck = Instantiate(duck).transform;
+                currentDuck = Resources.Load<GameObject>("test_absol_1").transform;//Instantiate(duck).transform;
+                Debug.Log($"Attempted to load: {"test_absol_1"}, got: {currentDuck}");
                 Vector3 newEulers = currentDuck.localEulerAngles;
                 newEulers.y = Random.Range(0, 360);
                 currentDuck.localEulerAngles = newEulers;
@@ -30,6 +31,9 @@ public class DuckPlacer : MonoBehaviour {
                 newForward.y = 0;
                 currentDuck.forward = Vector3.Slerp(currentDuck.forward, newForward, newForward.sqrMagnitude * 300);
                 currentDuck.position = hits[0].pose.position;
+                Debug.Log("WE DID IT, WE HIT THE RAY AND SAPWNESND THI THINGS? AT: " + currentDuck.position);
+            } else {
+                Debug.Log("RAYCAST AINT HIT DUFFIN");
             }
         } else {
             touching = false;
